@@ -24,9 +24,15 @@
     <ClInclude Include="Engine.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="SpriteManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteManager.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,5 +1,6 @@
 #pragma once
 #include "PGEGui.h"
+#include "SpriteManager.h"
 
 struct Circle
 {
@@ -87,7 +88,7 @@ private:
 public:
 	Engine()
 	{
-		sAppName = "Reaktionstester";
+		sAppName = "Reaction time testing";
 	}
 
 protected:
@@ -95,6 +96,12 @@ protected:
 	{
 		// Create the Circle
 		circle = Circle({ 100, 100 }, 100, olc::RED, olc::BLACK);
+
+		SpriteManager sm;
+		std::string sName = "";
+		sm.loadDirectionaryRecursive(sName);
+		DrawSprite({ 0, 0 }, sm.query("nand.png")->sprite, 20);
+		sm.freeAll();
 
 		return true;
 	}

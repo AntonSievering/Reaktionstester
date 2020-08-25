@@ -142,9 +142,11 @@
     <ClInclude Include="Engine.h" />
     <ClInclude Include="olcPixelGameEngine.h" />
     <ClInclude Include="PGEGui.h" />
+    <ClInclude Include="SpriteManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SpriteManager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
