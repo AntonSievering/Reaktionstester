@@ -1,5 +1,6 @@
 #include "SpriteManager.h"
 
+
 SpriteManager::SpriteManager()
 {
     m_mapSprites = SpriteMap();
